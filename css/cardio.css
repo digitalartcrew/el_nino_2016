@@ -12,6 +12,12 @@ body {
     margin-bottom: 30px;
 }
 
+.contact-submit {
+ 			float: right;
+ 			margin-top: 30px;
+ 			margin-bottom: 30px;
+   		}
+
 /* ========== TWITTER FEED ========== */
 #feed {
   background-color: #04518c;
@@ -240,7 +246,6 @@ nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 	color: white;
 	border: 2px solid transparent;
 	border-radius: 2px;
-	background: transparent;
 	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
@@ -1071,7 +1076,7 @@ footer .social-footer li:hover a {
 }
 
 .margin-top {
-	margin-top: 150px;
+	margin-top: 50px;
 }
 
 @media(max-width:992px) {
