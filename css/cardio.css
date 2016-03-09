@@ -8,6 +8,44 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.thumb {
+    margin-bottom: 30px;
+}
+
+/* ========== TWITTER FEED ========== */
+#feed {
+  background-color: #04518c;
+}
+
+#feed .tweets-icon {
+  text-align: center;
+  color: #ffffff;
+  font-size: 70px;
+  padding-bottom: 21px;
+}
+#feed .title-hr-dark {
+  margin-bottom: 35px;
+}
+#feed #tweets-feed {
+  color: white;
+}
+#feed #tweets-feed ul {
+  padding-left: 0;
+}
+#feed #tweets-feed ul li {
+  list-style: none;
+}
+#feed #tweets-feed ul li a {
+  color: #0890f8;
+  -webkit-transition: color 0.4s;
+  -moz-transition: color 0.4s;
+  -o-transition: color 0.4s;
+  transition: color 0.4s;
+}
+#feed #tweets-feed ul li a:hover {
+  color: #000000;
+  }
+
 .parallax {
 	position: absolute;
 	overflow: hidden;

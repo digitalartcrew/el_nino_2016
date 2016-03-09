@@ -33,6 +33,12 @@
 	<link rel="stylesheet" type="text/css" href="fonts/eleganticons/et-icons.css">
 	<!-- Main style -->
 	<link rel="stylesheet" type="text/css" href="css/cardio.css">
+
+	<!-- A few scripts that need to be in the head section -->
+<script src="js/jquery-1.11.1.min.js"></script>
+
+<!--Install Firebase-->
+<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
 </head>
 
 <body>
@@ -59,7 +65,7 @@
 					<li><a href="#team">Health</a></li>
 					<li><a href="#schedule">Schedule</a></li>
 					<li><a href="#pricing">Pricing</a></li>
-					<li><a href="#pricing">Media</a></li>
+					<li><a href="#media">Media</a></li>
 					<li><a href="#pricing">Contact</a></li>
 					<li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Sign Up</a></li>
 				</ul>
@@ -89,10 +95,10 @@
 			<div class="row intro-tables">
 				<div class="col-md-4">
 					<div class="intro-table intro-table-hover">
-						<h5 class="white heading hide-hover">Shop Scrap Pack</h5>
+						<h5 class="white heading hide-hover">Shop Skrap Pack</h5>
 						<div class="bottom">
 							<h4 class="white heading small-heading no-margin regular">Find great deals on MMA Gear!</h4>
-							<a href="http://scrappack.com/" class="btn btn-white-fill expand">Visit Site</a>
+							<a href="http://www.skrappack.com/" class="btn btn-white-fill expand">Visit Site</a>
 						</div>
 					</div>
 				</div>
@@ -248,7 +254,7 @@
 							<h5 class="muted regular">Athletic Trainer</h5>
 							<p>Albert Salopek has been working in Sports Medicine as a Certified Athletic Trainer for almost two decades. To compliment his deep understanding of Western Sports Medicine, Albert holds a Master's Degree in Traditional Chinese Medicine and is a Licensed Acupuncturist.</p>
 						</div>
-						<a href="http://www.acceleratesports.com/" data-toggle="modal" data-target="#modal1" class="btn btn-blue-fill ripple">Visit Site</a>
+						<a href="http://www.acceleratesports.com/" class="btn btn-blue-fill ripple">Visit Site</a>
 					</div>
 				</div>
 				<div class="col-md-6">
@@ -263,7 +269,7 @@
 							<h5 class="muted regular">Personal Trainer</h5>
 							<p>Every athlete has a team of people around him or her, helping them stay healthy, recover from injuries, and perform their best. Dr. Peter Goldman is one of these people for many of the best MMA fighters in the Bay Area and beyond. Learn how Dr. Goldman applies his craft to help keep fighters like Gilbert Melendez and Jake Shields in peak condition.</p>
 						</div>
-						<a href="http://www.sfgoldman.com/" data-toggle="modal" data-target="#modal1" class="btn btn-blue-fill ripple">Visit Site</a>
+						<a href="http://www.sfgoldman.com/" class="btn btn-blue-fill ripple">Visit Site</a>
 					</div>
 				</div>
 	
@@ -652,31 +658,79 @@
 			</div>
 		</div>
 	</section>
-	<section class="section section-padded blue-bg">
+	<section id="media" class="section">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<div class="owl-twitter owl-carousel">
-						<div class="item text-center">
-							<i class="icon fa fa-twitter"></i>
-							<h4 class="white light">To enjoy the glow of good health, you must exercise.</h4>
-							<h4 class="light-white light">#health #training #exercise</h4>
-						</div>
-						<div class="item text-center">
-							<i class="icon fa fa-twitter"></i>
-							<h4 class="white light">To enjoy the glow of good health, you must exercise.</h4>
-							<h4 class="light-white light">#health #training #exercise</h4>
-						</div>
-						<div class="item text-center">
-							<i class="icon fa fa-twitter"></i>
-							<h4 class="white light">To enjoy the glow of good health, you must exercise.</h4>
-							<h4 class="light-white light">#health #training #exercise</h4>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h1 class="page-header">El Niño Gallery</h1>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/media_1.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/media_2.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/media_3.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/media_4.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/media_5.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/media_6.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/media_7.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/media_8.png" alt="">
+                </a>
+            </div>
+      <!--       <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/media_7.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/media_8.png" alt="">
+                </a>
+            </div> -->
+        <!--     <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/media_1.png" alt="">
+                </a>
+            </div>
+                   <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/media_1.png" alt="">
+                </a>
+            </div> -->
+        </div>
 	</section>
+
+
 	<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content modal-popup">
@@ -754,14 +808,18 @@
 		</ul>
 		<a href="#" class="close-link"><i class="arrow_up"></i></a>
 	</div>
+	</body>
+
 	<!-- Scripts -->
-	<script src="js/jquery-1.11.1.min.js"></script>
+	
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/typewriter.js"></script>
 	<script src="js/jquery.onepagenav.js"></script>
 	<script src="js/main.js"></script>
-</body>
+
+	
+
 
 </html>
