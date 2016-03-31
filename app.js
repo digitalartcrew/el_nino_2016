@@ -25,8 +25,12 @@ app.use(methodOverride('_method'));
 
 
 // Set home page route
-app.get('*', function(req, res) {
+app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, '../elninomma', 'index.html'));
+});
+
+app.get('/camp', function(req, res) {
+  res.sendFile(path.join(__dirname, '../elninomma/', 'camp.html'));
 });
 
 // start the server
