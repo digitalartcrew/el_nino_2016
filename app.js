@@ -33,6 +33,10 @@ app.get('/camp', function(req, res) {
   res.sendFile(path.join(__dirname, '../elninomma/', 'camp.html'));
 });
 
+app.get('/info', function(req, res) {
+  res.sendFile(path.join(__dirname, '../elninomma/', 'info.html'));
+});
+
 // start the server
 app.listen(process.env.PORT || 3000, function () {
 	console.log('Starting a server on localhost:3000');
