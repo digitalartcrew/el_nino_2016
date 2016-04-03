@@ -2,7 +2,7 @@ $(function () {
 
     $("#contact-form").submit(function () {
 
-        var url = "contact.php"; 
+        var url = "camp.php"; 
 
         $.ajax({
             type: "POST",
