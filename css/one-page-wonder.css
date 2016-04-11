@@ -5,11 +5,12 @@
  */
 
 body {
+   /* background-color: red;*/
     margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
 .program {
-	margin-top: 500px;
+	margin-top: 550px;
 }
 
 .header-image {
