@@ -37,8 +37,8 @@
 	<!-- A few scripts that need to be in the head section -->
 <script src="js/jquery-1.11.1.min.js"></script>
 
-<!--Install Firebase-->
-<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+<!--Contact-->
+
 </head>
 
 <body>
@@ -348,7 +348,7 @@
 						<div class="title">
 							<h4>Albert Salopek, LAc ATC CMT</h4>
 							<h5 class="muted regular">Athletic Trainer</h5>
-							<p>Albert Salopek has been working in Sports Medicine as a Certified Athletic Trainer for almost two decades. To compliment his deep understanding of Western Sports Medicine, Albert holds a Master's Degree in Traditional Chinese Medicine and is a Licensed Acupuncturist.</p>
+							<p>Albert Salopek has been working in Sports Medicine as a Certified Athletic Trainer for almost two decades. To compliment his deep understanding of Western Sports Medicine, Albert holds a Master's Degree in Traditional Chinese Medicine and is a Licensed Acupuncturist. Albert has been an injury consultant to the Oakland Raiders since 2001. Albert is also the Head Therapist for MMA Champion Gilbert Melendez and the El Niño Training Center, Team Woodenman Muay Thai and Skrap Pack fight team.</p>
 						</div>
 						<a href="http://www.acceleratesports.com/" class="btn btn-blue-fill ripple">Visit Site</a>
 					</div>
@@ -362,8 +362,8 @@
 						<img src="img/team/team1.jpg" alt="Team Image" class="avatar">
 						<div class="title">
 							<h4>Dr. Peter Goldman</h4>
-							<h5 class="muted regular">Personal Trainer</h5>
-							<p>Every athlete has a team of people around him or her, helping them stay healthy, recover from injuries, and perform their best. Dr. Peter Goldman is one of these people for many of the best MMA fighters in the Bay Area and beyond. Learn how Dr. Goldman applies his craft to help keep fighters like Gilbert Melendez and Jake Shields in peak condition.</p>
+							<h5 class="muted regular">Chiropractic Healing</h5>
+							<p>Dr. Pete is the chiropractor to Gilbert Melendez, Keri Melendez, Jake Shields, Rickson Gracie, BJ Penn, Clark Gracie, Kron Gracie, and many more of the world's top pro athletes. </p>
 						</div>
 						<a href="http://www.sfgoldman.com/" class="btn btn-blue-fill ripple">Visit Site</a>
 					</div>
@@ -831,23 +831,63 @@
 	  <!--////////// CONTACT SECTION //////////-->
   <section id="contact" class="spacing">
     <div class="container">
+            <form id="contact-form" method="post" action="contact-gym.php" role="form">
 
-        <div class="col-sm-5">
-          <h2>Contact ENTC:</h2>
+                      <div class="messages"></div>
+
+                      <div class="controls">
+
+                        <div class="row">
+                          <h3>Contact El Niño Training Center</h3>
+                          <div class="col-md-6">
+                            <label for="form_name">First Name *</label>
+                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="form_lastname">Last Name *</label>
+                            <input id="form_lastname" type="text" name="lastname" class="form-control" placeholder="Please enter your lastname *" required="required">
+                          </div>
+                           <div class="col-md-12">
+                            <label for="form_phone">Phone *</label>
+                            <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone *" required="required">
+                          </div>
+                             <div class="col-md-12">
+                            <label for="form_email">Email *</label>
+                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required">
+                          </div>
+                          <br>
+                             <div class="col-md-12">
+                        <label for="form_message">Enter your message below: *</label>
+                        <textarea id="form_message" name="message" class="form-control" placeholder="Enter message here *" rows="4" required></textarea>
+                      </div>
+
+                        <div class="col-md-12">
+                          <input type="submit" class="btn btn-success btn-send" value="Submit">
+                        </div>
+                        <div class="col-md-12">
+                          <p class="text-muted"><strong>*</strong> These fields are required.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </form>
+
+                     <div class="col-sm-12">
+          <h3>or visit us today:</h3>
           <p class="lead">
             <strong>El Niño Training Center</strong> <br>
             2920 Third St. <br>
             San Francisco, CA<br>
             Phone: <a href="tel:4155506689">415-550-6689</a> <br>
-            <a href="#">keri.taylor@elninomma.com</a>
           </p>
           <hr>
  
           
         </div><!-- end col-sm-7 -->
+        </div>
 
         
-      </div><!-- end row -->
+     
  
   </section><!-- end CONTACT SECTION -->
 
@@ -897,15 +937,15 @@
 					<div class="row opening-hours">
 						<div class="col-sm-6 text-center-mobile">
 							<h5 class="light-white light">Mon - Thur</h5>
-							<h3 class="regular white">10:00 - 9:00</h3>
+							<h3 class="regular white">9:30AM - 9:00PM</h3>
 						</div>
 						<div class="col-sm-6 text-center-mobile">
 							<h5 class="light-white light">Fri</h5>
-							<h3 class="regular white">10:00 - 8:00</h3>
+							<h3 class="regular white">9:30AM - 8:00PM</h3>
 						</div>
 						<div class="col-sm-6 text-center-mobile">
 							<h5 class="light-white light">Sat</h5>
-							<h3 class="regular white">9:00 - 2:00</h3>
+							<h3 class="regular white">9:00AM - 2:00PM</h3>
 						</div>
 					</div>
 				</div>
@@ -933,7 +973,8 @@
 	</body>
 
 	<!-- Scripts -->
-	
+
+	<script src="js/contact.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/wow.min.js"></script>

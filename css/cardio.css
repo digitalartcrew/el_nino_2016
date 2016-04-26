@@ -202,7 +202,7 @@ header .typed-cursor {
 
 a {
 	text-decoration: none;
-	color: #00a8ff;
+	color: #fff;
 	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
