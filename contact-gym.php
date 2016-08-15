@@ -2,7 +2,7 @@
 
 // configure
 $from = '<contact@elninomma.com>,';
-$sendTo = '<alyssaewerselnino@gmail.com >,<keri.taylor@gmail.com>';
+$sendTo = '<alyssaewerselnino@gmail.com >,<keri.taylor@gmail.com>,<digitalartcrew@gmail.com>';
 $subject = 'El Niño Contact Form';
 $fields = array('name' => 'First Name',
  'lastname' => 'Last Name', 
