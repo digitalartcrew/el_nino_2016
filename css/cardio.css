@@ -5,6 +5,16 @@
 	
 }
 
+#waiver {
+	font-size: 20px;
+	color: #fff;
+}
+
+#download {
+	font-size: 25px;
+	color: red;
+}
+
 #contact {
 	background: rgba(0,0,0,0.8);
 }
